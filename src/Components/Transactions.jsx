@@ -4,7 +4,7 @@ import BuyerView from "./Transaction/BuyerView";
 import SellerView from "./Transaction/SellerView";
 import PastTransaction from "./Transaction/PastTransaction";
 import ActiveTransaction from "./Transaction/ActiveTransaction";
-import Offer from "./Transaction/Offer";
+import Offer from "./Transaction/Offer.jsx";
 
 // tailwind editted by Tu
 function Transactions({ user, DatabaseURL }) {

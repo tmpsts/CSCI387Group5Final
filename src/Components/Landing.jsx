@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Products from "./Landing/Products";
-import Search from "./Landing/Search";
-import AddProduct from "./Landing/AddProduct";
+import Products from "./Landing/Products.jsx";
+import Search from "./Landing/Search.jsx";
+import AddProduct from "./Landing/AddProduct.jsx";
 
 // Tailwind edited by: Mitchell
 function Landing({ user, DatabaseURL }) {

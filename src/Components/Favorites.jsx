@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import OneListing from "./Landing/OneListing";
+import OneListing from "./Landing/OneListing.jsx";
 
 function Favorites({ user, DatabaseURL }) {
   const [favorites, setFavorites] = useState([]);

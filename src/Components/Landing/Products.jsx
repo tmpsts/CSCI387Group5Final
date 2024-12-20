@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import OneListing from "./OneListing";
+import OneListing from "./OneListing.jsx";
 
 // tailwind edited by: ethan
 function Products({ DatabaseURL }) {

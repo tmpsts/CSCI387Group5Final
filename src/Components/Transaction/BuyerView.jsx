@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
-import MessageBoard from "./MessageBoard";
+import MessageBoard from "./MessageBoard.jsx";
 
 // Tailwind edited by: Mitchell
 function BuyerView({

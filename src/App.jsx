@@ -1,16 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Landing from "./Components/Landing";
-import Login from "./Components/Login";
-import Profile from "./Components/Profile";
-import Nav from "./Components/Nav";
-import Transactions from "./Components/Transactions";
-import Favorites from "./Components/Favorites";
-import Settings from "./Components/Settings";
-import Listing from "./Components/Listing";
-import ViewProfile from "./Components/ViewProfile";
-import AdminPanel from "./Components/AdminPanel";
-import config from "./config";
+import Landing from "./Components/Landing.jsx";
+import Login from "./Components/Login.jsx";
+import Profile from "./Components/Profile.jsx";
+import Nav from "./Components/Nav.jsx";
+import Transactions from "./Components/Transactions.jsx";
+import Favorites from "./Components/Favorites.jsx";
+import Settings from "./Components/Settings.jsx";
+import Listing from "./Components/Listing.jsx";
+import ViewProfile from "./Components/ViewProfile.jsx";
+import AdminPanel from "./Components/AdminPanel.jsx";
+import config from "./config.js";
 
 const DatabaseURL = config.DatabaseURL;
 
@@ -27,12 +27,12 @@ function App() {
         console.log("Retrieved user from localStorage:", parsedUser);
         setUser(parsedUser);
         const currentPath = window.location.pathname;
-        const basePath = "/~group5-f24/testwebsite/dist/";
+        const basePath = "/";
         if (
           currentPath === basePath ||
           currentPath === `${basePath}index.html`
         ) {
-          window.location.href = "/~group5-f24/testwebsite/dist/landing";
+          window.location.href = "/landing";
         }
       } catch (error) {
         console.error("Failed to parse user from localStorage:", error);
@@ -63,7 +63,7 @@ function App() {
     <div
       className={`overflow-hidden ${darkMode ? "w-full light" : "w-full dark"}`}
     >
-      <BrowserRouter basename="/~group5-f24/testwebsite/dist">
+      <BrowserRouter basename="/">
         <Routes>
           <Route
             exact

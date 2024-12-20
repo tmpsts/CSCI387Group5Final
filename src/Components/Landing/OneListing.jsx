@@ -1,5 +1,5 @@
 import React from "react";
-import { haversineDistance, useUserLocation } from "./utils"; // Import the utility functions
+import { haversineDistance, useUserLocation } from "./utils.js"; // Import the utility functions
 
 function OneListing({ product, openListingClick }) {
   const userLocation = useUserLocation();
