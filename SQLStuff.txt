@@ -1,0 +1,24 @@
+Users:
+UserID, int, PK
+Username, varchar(30)
+Password, varchar(30)
+Admin?, bool
+
+Listings:
+ListingID, int, PK
+UserID, int, FK (From UserID from Users)
+Name, varchar(30)
+Description, varchar(60)
+Image, unknown
+Price, int
+DateCreated, datetime
+ExpirationDate, timestamp
+Sold?, bool
+
+Offers:
+OfferID, int, PK
+BuyerID, int, FK (From UserID from Users)
+SellerID, int, FK (From UserID from Users)
+ListingID, int, FK (From ListingID from Listings)
+OfferAmount, int
+
