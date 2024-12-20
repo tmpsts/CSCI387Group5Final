@@ -10,9 +10,9 @@ import Settings from "./Components/Settings";
 import Listing from "./Components/Listing";
 import ViewProfile from "./Components/ViewProfile";
 import AdminPanel from "./Components/AdminPanel";
+import config from "./config";
 
-const DatabaseURL = "https://fuckheroku.onrender.com";
-// const DatabaseURL = "http://localhost:3000";
+const DatabaseURL = config.DatabaseURL;
 
 function App() {
   const [user, setUser] = useState(null);
